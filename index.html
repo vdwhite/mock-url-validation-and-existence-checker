@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/app.css">
+</head>
+<body>
+    <h1>Mock URL Format and Existence Validator</h1>
+    <p>This is a mock URL Validator to mock the validation and checking of existence of the path or file</p>
+    <p>For rules of URL, see <a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_URL">here</a></p>
+    <p>As the server side is not implemented, only URL with http and https schemes are considered as valid.</p> 
+    <p>Besides the limitation above, only the domains fakedomain.com and fake-domain-http.com is allowed, and following URLs of folders/files be considered as existed:</p>
+    <ul>
+        <li>https://fakedomain.com/fake-path</li>
+        <li>https://fakedomain.com/fake-path/fake-files</li>
+        <li>https://fakedomain.com/fake-path/fake-files/faketext.txt</li>
+        <li>http://fake-domain-http.com/fake-folder/faketext.txt</li>
+    </ul>
+    <input type="text" placeholder="please input URL" id="userInput">
+    <div id="validate-result"></div>
+    <script src="build/app.js"></script>
+</body>
+</html>
